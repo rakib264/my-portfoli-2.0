@@ -1,0 +1,18 @@
+.scroller {
+  --animation-direction: normal;
+  --animation-duration: 40s;
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration) linear infinite
+    var(--animation-direction);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
